@@ -1,11 +1,9 @@
 # mundialito
 Tabla mundial 2026
-# Re-initializing leaderboard and match_data to ensure a clean state before re-running examples
 leaderboard_df = pd.DataFrame({'Member': members, 'Total Points': [0] * len(members)})
 leaderboard_df = leaderboard_df.set_index('Member')
 match_data = []
 
-# Re-run the example matches to populate the dataframes
 print('Re-running example matches to prepare data for HTML output...')
 # Match 1: Argentina vs. Saudi Arabia
 match1_predictions = {
